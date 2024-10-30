@@ -10,6 +10,26 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <button onclick="pievienotRindu()">pievienot rindu</button>
+        <form id="forma"></form>
+         <script>
+            function laukums(n){
+                for(let i=0;i<n;i++)
+                    
+            let divs=document.createElement("div");divs.setAttribute("class","rinda");
+            divs.innerHTML=(i+1)+")";
+            let ievads1 = document.createElement("INPUT"); ievads1.style="text-align: center";
+            let ievads2 = document.createElement("INPUT"); ievads2.style="text-align: center";
+            let poga = document.createElement("INPUT"); poga.value="novākt";poga.type="button";
+            poga.onclick=()=>{
+            poga.parentNode.remove();
+};
+    
+           divs.appendChild(ievads1); divs.appendChild(ievads2); divs.appendChild(poga);
+            document.getElementById("forma").appendChild(divs);
+    
+}
+</script>
         <div>TODO write content</div>
     </body>
 </html>
